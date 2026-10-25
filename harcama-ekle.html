@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harcama Ekle - Bütçe Takip</title>
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+  <header>
+    <img src="img/logo.svg" alt="Bütçe Takip logosu" width="64">
+    <h1>Bütçe Takip Uygulaması</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="harcamalar.html">Harcamalarım</a></li>
+        <li><a href="harcama-ekle.html">Harcama Ekle</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Harcama Ekle</h2>
+    <form id="harcamaFormu">
+      <p>
+        <label>Açıklama</label><br>
+        <input type="text" id="aciklama" name="aciklama" placeholder="Örn. Market alışverişi" required>
+      </p>
+      <p>
+        <label>Tutar (TL)</label><br>
+        <input type="number" id="tutar" name="tutar" min="0" max="100000" step="1" required>
+      </p>
+      <p>
+        <label>Kategori</label><br>
+        <select id="kategori" name="kategori" required>
+          <option>Seçiniz</option>
+          <option">Gıda</option>
+          <option>Ulaşım</option>
+          <option>Fatura</option>
+          <option>Eğitim</option>
+          <option>Diğer</option>
+        </select>
+      </p>
+      <p>
+        <label>Tarih</label><br>
+        <input type="date" id="tarih" name="tarih" required>
+      </p>
+      <p>
+        Ödeme tipi:
+        <input type="radio" id="nakit" name="odeme" value="nakit" checked>
+        <label>Nakit</label>
+        <input type="radio" id="kart" name="odeme" value="kart">
+        <label>Kart</label>
+      </p>
+      <p>
+        <label>Not</label><br>
+        <textarea id="not" name="not" rows="5" cols="40"></textarea>
+      </p>
+      <button type="submit">Kaydet</button>
+    </form>
+  </main>
+
+</body>
+</html>

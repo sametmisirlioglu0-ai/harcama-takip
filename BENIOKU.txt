@@ -1,0 +1,1 @@
+- VS Code ve Live Server ile açınız.
