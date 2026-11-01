@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ana-renk: #1B3A4B;
+  --vurgu-renk: #E07A3D;
+  --baglanti-renk: #2A7A6A;
+  --zemin: #F0F3F6;
+  --metin: #243447;
+  --kenar: #C8CED6;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--metin);
+  background-color: var(--zemin);
+  margin: 0;
+}
+
+h1, h2 {
+  color: var(--ana-renk);
+}
+
+a {
+  color: var(--baglanti-renk);
+}
+
+a:hover {
+  color: var(--vurgu-renk);
+}
+
+.vurgu {
+  color: var(--vurgu-renk);
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+main {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--kenar);
+}
+
+th {
+  background-color: var(--ana-renk);
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--zemin);
+}
+
+input, select, textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 10px;
+  border: 1px solid var(--kenar);
+  border-radius: 8px;
+  font: inherit;
+}
+
+input[type="radio"]{
+  width: auto;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--vurgu-renk);
+}
+
+button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--vurgu-renk);
+  color: var(--ana-renk);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--ana-renk);
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: var(--ana-renk);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: white;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.aktif {
+  background-color: var(--vurgu-renk);
+  color: var(--ana-renk);
+}
+
+.tablo-kutu {
+  overflow-x: auto;
+}
+
+.gizli {
+  display: none;
+}
+
+.hata {
+  border-color: #B42318;
+  background-color: #FDECEC;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-left: 0;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  main {
+    margin: 12px;
+    padding: 16px;
+  }
+}
