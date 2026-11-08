@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kategoriler - FinTrack</title>
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+  <header>
+    <a class="marka" href="index.html">
+      <img src="img/logo.svg" alt="" width="40" height="40">
+      FinTrack
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="islemler.html">İşlemler</a></li>
+        <li><a href="butce.html">Bütçe</a></li>
+        <li><a href="raporlar.html">Raporlar</a></li>
+        <li><a href="kategoriler.html" class="aktif">Kategoriler</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Kategoriler</h1>
+
+    <section class="kutu">
+      <h2>Hazır kategoriler</h2>
+      <ul>
+        <li>Gıda</li>
+        <li>Ulaşım</li>
+        <li>Fatura</li>
+        <li>Eğitim</li>
+        <li>Eğlence</li>
+        <li>Kira</li>
+        <li>Burs</li>
+      </ul>
+    </section>
+
+    <section class="kutu">
+      <h2>Yeni kategori</h2>
+      <form method="get">
+        <p>
+          <label for="ad">Ad</label>
+          <input type="text" id="ad" name="ad" required>
+        </p>
+        <p>
+          <label for="tur">Tür</label>
+          <select id="tur" name="tur">
+            <option value="gider">Gider</option>
+            <option value="gelir">Gelir</option>
+          </select>
+        </p>
+        <button type="submit">Ekle</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>FinTrack · BLM2537 · 2026</p>
+  </footer>
+</body>
+</html>

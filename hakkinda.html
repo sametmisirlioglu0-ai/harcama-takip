@@ -3,45 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hakkında - Bütçe Takip</title>
+  <title>Hakkında - FinTrack</title>
   <link rel="stylesheet" href="css/stil.css">
 </head>
 <body>
   <header>
-    <img src="img/logo.svg" alt="Bütçe Takip logosu" width="64">
-    <h1>Bütçe Takip Uygulaması</h1>
+    <a class="marka" href="index.html">
+      <img src="img/logo.svg" alt="" width="40" height="40">
+      FinTrack
+    </a>
     <nav>
       <ul>
         <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="harcamalar.html">Harcamalarım</a></li>
-        <li><a href="harcama-ekle.html">Harcama Ekle</a></li>
+        <li><a href="islemler.html">İşlemler</a></li>
+        <li><a href="butce.html">Bütçe</a></li>
+        <li><a href="raporlar.html">Raporlar</a></li>
+        <li><a href="kategoriler.html">Kategoriler</a></li>
         <li><a href="hakkinda.html" class="aktif">Hakkında</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="hakkinda">
-      <h2>Proje hakkında</h2>
+    <h1>Hakkında</h1>
+
+    <section class="kutu">
+      <h2>Proje</h2>
       <p>
-        Bu site, BLM2537 dersindeki Not Takip örneğinin bütçe ve harcama takibi
-        için uyarlanmış bir öğrenci projesidir. Harcamaları listeleyebilir,
-        yeni kayıt ekleyebilirsiniz.
+        FinTrack, gelir ve giderleri takip etmek için yapılan bir web sayfasıdır.
       </p>
-      <p>
-        Sayfalar HTML ile kurulmuş, görünüm <strong>css/stil.css</strong> dosyası
-        ile verilmiştir.
-      </p>
+    </section>
+
+    <section class="kutu">
+      <h2>Sayfalar</h2>
       <ul>
-        <li>Harcamaları tabloda görme</li>
-        <li>Form ile yeni harcama ekleme</li>
-        <li>Ortak menü ve stil dosyası</li>
+        <li>Ana sayfa: gelir, gider ve kalan kutuları</li>
+        <li>İşlemler: yeni kayıt formu ve tablo</li>
+        <li>Bütçe: kategori limitleri ve doluluk çubuğu</li>
+        <li>Raporlar: harcama çubukları</li>
+        <li>Kategoriler: liste ve ekleme formu</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Bütçe Takip &middot; BLM2537</p>
+    <p>FinTrack · BLM2537 · 2026</p>
   </footer>
 </body>
 </html>

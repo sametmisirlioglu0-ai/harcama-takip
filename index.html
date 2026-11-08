@@ -3,40 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bütçe Takip</title>
+  <title>Ana Sayfa - FinTrack</title>
   <link rel="stylesheet" href="css/stil.css">
 </head>
 <body>
   <header>
-    <img src="img/logo.svg" alt="Bütçe Takip logosu" width="64">
-    <h1>Bütçe Takip Uygulaması</h1>
+    <a class="marka" href="index.html">
+      <img src="img/logo.svg" alt="" width="40" height="40">
+      FinTrack
+    </a>
     <nav>
       <ul>
         <li><a href="index.html" class="aktif">Ana Sayfa</a></li>
-        <li><a href="harcamalar.html">Harcamalarım</a></li>
-        <li><a href="harcama-ekle.html">Harcama Ekle</a></li>
+        <li><a href="islemler.html">İşlemler</a></li>
+        <li><a href="butce.html">Bütçe</a></li>
+        <li><a href="raporlar.html">Raporlar</a></li>
+        <li><a href="kategoriler.html">Kategoriler</a></li>
         <li><a href="hakkinda.html">Hakkında</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="tanitim">
-      <h2>Hoş geldiniz</h2>
-      <p>Aylık ve harcamalarınızı takip edin.</p>
+    <h1>Gösterge paneli</h1>
+
+    <section class="kartlar">
+      <article class="kutu">
+        <h2>Toplam gelir</h2>
+        <p class="tutar gelir">15.000 TL</p>
+      </article>
+      <article class="kutu">
+        <h2>Toplam gider</h2>
+        <p class="tutar gider">1.446 TL</p>
+      </article>
+      <article class="kutu">
+        <h2>Kalan</h2>
+        <p class="tutar">13.554 TL</p>
+      </article>
     </section>
-    <section id="ozellikler">
-      <h2>Neler yapabilirsiniz?</h2>
-      <ul class="ozellik-listesi">
-        <li>Harcamalarınızı listeleyin</li>
-        <li>Kategori ve tutar bilgilerini girin</li>
-        <li>Harcamalarınızı <span class="vurgu">kolayca</span> görün</li>
-      </ul>
+
+    <section class="kutu">
+      <h2>Örnek kurlar</h2>
+      <p>USD 50.14 · EUR 55.86</p>
+    </section>
+
+    <section class="kutu">
+      <h2>Son işlemler</h2>
+      <div class="tablo-kutu">
+        <table>
+          <caption>En yeni beş kayıt</caption>
+          <thead>
+            <tr>
+              <th>Tarih</th>
+              <th>Açıklama</th>
+              <th>Kategori</th>
+              <th>Tutar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12.11.2026</td>
+              <td>Sinema</td>
+              <td>Eğlence</td>
+              <td class="gider">280 TL</td>
+            </tr>
+            <tr>
+              <td>10.11.2026</td>
+              <td>Kitap</td>
+              <td>Eğitim</td>
+              <td class="gider">210 TL</td>
+            </tr>
+            <tr>
+              <td>08.11.2026</td>
+              <td>Elektrik faturası</td>
+              <td>Fatura</td>
+              <td class="gider">321 TL</td>
+            </tr>
+            <tr>
+              <td>05.11.2026</td>
+              <td>Toplu taşıma</td>
+              <td>Ulaşım</td>
+              <td class="gider">150 TL</td>
+            </tr>
+            <tr>
+              <td>02.11.2026</td>
+              <td>Market</td>
+              <td>Gıda</td>
+              <td class="gider">486 TL</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><a href="islemler.html">Tüm işlemler</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Bütçe Takip &middot; BLM2537</p>
+    <p>FinTrack · BLM2537 · 2026</p>
   </footer>
 </body>
 </html>

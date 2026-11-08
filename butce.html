@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bütçe - FinTrack</title>
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+  <header>
+    <a class="marka" href="index.html">
+      <img src="img/logo.svg" alt="" width="40" height="40">
+      FinTrack
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="islemler.html">İşlemler</a></li>
+        <li><a href="butce.html" class="aktif">Bütçe</a></li>
+        <li><a href="raporlar.html">Raporlar</a></li>
+        <li><a href="kategoriler.html">Kategoriler</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bütçe</h1>
+
+    <div class="yan-yana">
+      <section class="kutu">
+        <h2>Limit gir</h2>
+        <form method="get">
+          <p>
+            <label for="kategori">Kategori</label>
+            <select id="kategori" name="kategori" required>
+              <option value="">Seçiniz</option>
+              <option value="gida">Gıda</option>
+              <option value="ulasim">Ulaşım</option>
+              <option value="fatura">Fatura</option>
+              <option value="egitim">Eğitim</option>
+              <option value="eglence">Eğlence</option>
+            </select>
+          </p>
+          <p>
+            <label for="limit">Aylık limit (TL)</label>
+            <input type="number" id="limit" name="limit" min="1" required>
+          </p>
+          <button type="submit">Kaydet</button>
+        </form>
+      </section>
+
+      <section class="kutu">
+        <h2>Kasım doluluk</h2>
+
+        <h3>Gıda — 486 / 2.000 TL</h3>
+        <div class="cubuk"><span style="width: 24%"></span></div>
+
+        <h3>Ulaşım — 150 / 500 TL</h3>
+        <div class="cubuk"><span style="width: 30%"></span></div>
+
+        <h3>Fatura — 321 / 1.000 TL</h3>
+        <div class="cubuk"><span style="width: 32%"></span></div>
+
+        <h3>Eğitim — 210 / 400 TL</h3>
+        <div class="cubuk"><span style="width: 53%"></span></div>
+
+        <div class="asildi">
+          <h3>Eğlence — 280 / 250 TL</h3>
+          <div class="cubuk"><span style="width: 100%"></span></div>
+          <p class="uyari">Limit aşıldı</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>FinTrack · BLM2537 · 2026</p>
+  </footer>
+</body>
+</html>

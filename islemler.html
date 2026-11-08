@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İşlemler - FinTrack</title>
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+  <header>
+    <a class="marka" href="index.html">
+      <img src="img/logo.svg" alt="" width="40" height="40">
+      FinTrack
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="islemler.html" class="aktif">İşlemler</a></li>
+        <li><a href="butce.html">Bütçe</a></li>
+        <li><a href="raporlar.html">Raporlar</a></li>
+        <li><a href="kategoriler.html">Kategoriler</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Gelir ve gider</h1>
+
+    <div class="yan-yana">
+      <section class="kutu">
+        <h2>Yeni işlem</h2>
+        <form method="get">
+          <p>İşlem tipi</p>
+          <label><input type="radio" name="tur" value="gelir"> Gelir</label>
+          <label><input type="radio" name="tur" value="gider" checked> Gider</label>
+          <p>
+            <label for="aciklama">Açıklama</label>
+            <input type="text" id="aciklama" name="aciklama" required>
+          </p>
+          <p>
+            <label for="tutar">Tutar (TL)</label>
+            <input type="number" id="tutar" name="tutar" min="0" step="0.01" required>
+          </p>
+          <p>
+            <label for="tarih">Tarih</label>
+            <input type="date" id="tarih" name="tarih" required>
+          </p>
+          <p>
+            <label for="kategori">Kategori</label>
+            <select id="kategori" name="kategori" required>
+              <option value="">Seçiniz</option>
+              <option value="gida">Gıda</option>
+              <option value="ulasim">Ulaşım</option>
+              <option value="fatura">Fatura</option>
+              <option value="egitim">Eğitim</option>
+              <option value="eglence">Eğlence</option>
+              <option value="kira">Kira</option>
+              <option value="burs">Burs</option>
+            </select>
+          </p>
+          <button type="submit">Kaydet</button>
+        </form>
+      </section>
+
+      <section class="kutu">
+        <h2>Kayıtlar</h2>
+        <div class="tablo-kutu">
+          <table>
+            <caption>Kasım 2026 örnek kayıtları</caption>
+            <thead>
+              <tr>
+                <th>Tarih</th>
+                <th>Tür</th>
+                <th>Açıklama</th>
+                <th>Kategori</th>
+                <th>Tutar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12.11.2026</td>
+                <td>Gider</td>
+                <td>Sinema</td>
+                <td>Eğlence</td>
+                <td class="gider">280</td>
+              </tr>
+              <tr>
+                <td>10.11.2026</td>
+                <td>Gider</td>
+                <td>Kitap</td>
+                <td>Eğitim</td>
+                <td class="gider">210</td>
+              </tr>
+              <tr>
+                <td>08.11.2026</td>
+                <td>Gider</td>
+                <td>Elektrik</td>
+                <td>Fatura</td>
+                <td class="gider">321</td>
+              </tr>
+              <tr>
+                <td>05.11.2026</td>
+                <td>Gider</td>
+                <td>Toplu taşıma</td>
+                <td>Ulaşım</td>
+                <td class="gider">150</td>
+              </tr>
+              <tr>
+                <td>02.11.2026</td>
+                <td>Gider</td>
+                <td>Market</td>
+                <td>Gıda</td>
+                <td class="gider">486</td>
+              </tr>
+              <tr>
+                <td>01.11.2026</td>
+                <td>Gelir</td>
+                <td>Aile desteği</td>
+                <td>Diğer</td>
+                <td class="gelir">7.000</td>
+              </tr>
+              <tr>
+                <td>01.11.2026</td>
+                <td>Gelir</td>
+                <td>Burs</td>
+                <td>Burs</td>
+                <td class="gelir">8.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>FinTrack · BLM2537 · 2026</p>
+  </footer>
+</body>
+</html>
