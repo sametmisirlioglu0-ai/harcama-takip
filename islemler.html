@@ -30,7 +30,7 @@
     <div class="yan-yana">
       <section class="kutu">
         <h2>Yeni işlem</h2>
-        <form method="get">
+        <form id="islemFormu">
           <p>İşlem tipi</p>
           <label><input type="radio" name="tur" value="gelir"> Gelir</label>
           <label><input type="radio" name="tur" value="gider" checked> Gider</label>
@@ -67,7 +67,7 @@
         <h2>Kayıtlar</h2>
         <div class="tablo-kutu">
           <table>
-            <caption>Kasım 2026 örnek kayıtları</caption>
+            <caption>Kayıtlı işlemler</caption>
             <thead>
               <tr>
                 <th>Tarih</th>
@@ -77,57 +77,7 @@
                 <th>Tutar</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>12.11.2026</td>
-                <td>Gider</td>
-                <td>Sinema</td>
-                <td>Eğlence</td>
-                <td class="gider">280</td>
-              </tr>
-              <tr>
-                <td>10.11.2026</td>
-                <td>Gider</td>
-                <td>Kitap</td>
-                <td>Eğitim</td>
-                <td class="gider">210</td>
-              </tr>
-              <tr>
-                <td>08.11.2026</td>
-                <td>Gider</td>
-                <td>Elektrik</td>
-                <td>Fatura</td>
-                <td class="gider">321</td>
-              </tr>
-              <tr>
-                <td>05.11.2026</td>
-                <td>Gider</td>
-                <td>Toplu taşıma</td>
-                <td>Ulaşım</td>
-                <td class="gider">150</td>
-              </tr>
-              <tr>
-                <td>02.11.2026</td>
-                <td>Gider</td>
-                <td>Market</td>
-                <td>Gıda</td>
-                <td class="gider">486</td>
-              </tr>
-              <tr>
-                <td>01.11.2026</td>
-                <td>Gelir</td>
-                <td>Aile desteği</td>
-                <td>Diğer</td>
-                <td class="gelir">7.000</td>
-              </tr>
-              <tr>
-                <td>01.11.2026</td>
-                <td>Gelir</td>
-                <td>Burs</td>
-                <td>Burs</td>
-                <td class="gelir">8.000</td>
-              </tr>
-            </tbody>
+            <tbody id="kayitlar"></tbody>
           </table>
         </div>
       </section>
@@ -137,5 +87,7 @@
   <footer>
     <p>FinTrack · BLM2537 · 2026</p>
   </footer>
+  <script src="js/veri.js"></script>
+  <script src="js/islemler.js"></script>
 </body>
 </html>
